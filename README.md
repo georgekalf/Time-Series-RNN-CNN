@@ -2,7 +2,7 @@
 
 # Time Series prediction with RNN and CNN models
 
-The above models are designed to predict fault classification based on time-series analysis for benchmark wind turbine machine. The models are composed of two main components: the Recurrent Neural Network (RNN) and the Convolutional Neural Network (CNN). 
+The above models are designed to predict fault classification based on time-series analysis for benchmark wind turbine machine. The models are composed of two main components: ## the Recurrent Neural Network (RNN) and the Convolutional Neural Network (CNN). 
 
 The RNN is designed to learn temporal patterns and dependencies in the time series. Specifically, it takes input sequences and processes them sequentially while retaining a state that represents information from previous inputs. This allows the model to remember important patterns and dependencies in the data that are relevant for predicting future values. 
 
@@ -11,5 +11,3 @@ The CNN, on the other hand, is designed to learn spatial patterns in the time se
 To implement this model, the time series data is first preprocessed by dividing it into input sequences and associated output sequences. These sequences are then fed into the model, which consists of a stack of convolutional layers, followed by a stack of RNN layers, followed by a stack of dense layers with a final output layer for prediction.
 
 During training, the model minimizes the loss function between the predicted and actual output sequences using backpropagation and gradient descent. The model is trained to make accurate predictions by adjusting the weights of the various layers based on the errors in the predicted output.
-
-Convolutional neural network fault classification based on time-series analysis for benchmark wind turbine machine
