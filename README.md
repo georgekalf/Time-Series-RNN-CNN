@@ -2,7 +2,8 @@
 
 # Time Series Analysis and Model Training with TensorFlow and Keras
 
-## Description: This GitHub repository contains code for performing time series analysis and training various models using TensorFlow and Keras. The project aims to provide a comprehensive framework for analyzing and modeling time series data, making it easier to develop accurate and robust predictive models.
+## Description: 
+This repository contains code for performing time series analysis and training various models using TensorFlow and Keras. The project aims to provide a comprehensive framework for analyzing and modeling time series data, making it easier to develop accurate and robust predictive models.
 
 ## Key Features:
 
