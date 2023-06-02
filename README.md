@@ -1,13 +1,18 @@
 ![banner image](https://user-images.githubusercontent.com/61338647/170028290-c2b58093-8cf4-4ee9-b08b-77d0cc21e3f8.jpg)
 
-# Time Series prediction with RNN and CNN models
+# Time Series Analysis and Model Training with TensorFlow and Keras
 
-The above models are designed to predict fault classification based on time-series analysis for benchmark wind turbine machine. The models are composed of two main components: the Recurrent Neural Network (RNN) and the Convolutional Neural Network (CNN). 
+## Description: This GitHub repository contains code for performing time series analysis and training various models using TensorFlow and Keras. The project aims to provide a comprehensive framework for analyzing and modeling time series data, making it easier to develop accurate and robust predictive models.
 
-The RNN is designed to learn temporal patterns and dependencies in the time series. Specifically, it takes input sequences and processes them sequentially while retaining a state that represents information from previous inputs. This allows the model to remember important patterns and dependencies in the data that are relevant for predicting future values. 
+## Key Features:
 
-The CNN, on the other hand, is designed to learn spatial patterns in the time series. Specifically, it takes input sequences and applies a series of convolutional filters to detect and extract important features in the data. This allows the model to learn more complex patterns and dependencies that may be difficult to capture with a simple RNN architecture.
+1. Data Loading and Visualization: The code includes functions to load two sets of time series data, time_series_1 and time_series_2, along with their corresponding target variable, y. It also provides visualization tools to help understand the characteristics and patterns present in the time series data.
 
-To implement this model, the time series data is first preprocessed by dividing it into input sequences and associated output sequences. These sequences are then fed into the model, which consists of a stack of convolutional layers, followed by a stack of RNN layers, followed by a stack of dense layers with a final output layer for prediction.
+2. Data Preprocessing: Time series data often requires preprocessing steps to prepare it for model training. The code provides functions to handle common preprocessing tasks such as data combination, reshaping, and normalization. It ensures that the data is in the appropriate format for feeding into the models.
 
-During training, the model minimizes the loss function between the predicted and actual output sequences using backpropagation and gradient descent. The model is trained to make accurate predictions by adjusting the weights of the various layers based on the errors in the predicted output.
+3. Model Creation and Training: The repository offers a range of model architectures commonly used in time series analysis, including LSTM (Long Short-Term Memory) and CNN (Convolutional Neural Network) models. These models are implemented using TensorFlow and Keras, providing flexibility and ease of use. The code includes functions to create, compile, and train the models using user-defined hyperparameters. Currently, the code is set up to use the Adam optimizer and sparse categorical cross-entropy loss, but these can be easily customized.
+
+4. Training Visualization: Monitoring the training process is crucial for model development. The code generates plots to visualize the training and validation loss during model training. These visualizations help assess the model's performance, detect overfitting, and determine the optimal number of training epochs. Early stopping techniques are also implemented to prevent overfitting and save computational resources.
+
+
+By leveraging the power of TensorFlow and Keras, this repository provides a solid foundation for time series analysis and model training. Whether you are working on forecasting, anomaly detection, or other time series applications, this project can serve as a valuable resource to accelerate your development process.
